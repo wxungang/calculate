@@ -16,8 +16,7 @@ function taps() {
         if (/\d|\.|%/.test(_value)) {
             validate(_value);
         } else if (_flag && _flag.indexOf('calculate') == 0) {
-            calculateFlag = true;
-            add(_flag);
+            calculate(_flag);
         } else if ('=' == _value) {
             result();
         }
@@ -28,10 +27,13 @@ function inputValue() {
 }
 function result() {
     exp = exp + $('#result').text();
+    console.log(exp);
     var _result = eval(exp);
+    exp='';
     $('#result').text(_result);
 }
-function add(_value) {
+function calculate(_value) {
+    calculateFlag = true;
     console.log(_value);
     var _calculateObj = {
         calculate_add: '+',
@@ -39,7 +41,8 @@ function add(_value) {
         calculate_multi: '*',
         calculate_div: '/'
     };
-    exp = (exp || $('#result').text()) + _calculateObj[_value];
+    exp += $('#result').text() + _calculateObj[_value];
+    console.log(exp);
 }
 
 /**
