@@ -17,9 +17,9 @@ function taps() {
             validate(_value);
         } else if (_flag && _flag.indexOf('calculate') == 0) {
             calculateFlag = true;
-            //add(_flag);
+            add(_flag);
         } else if ('=' == _value) {
-            //result();
+            result();
         }
     });
 }
@@ -29,7 +29,7 @@ function inputValue() {
 function result() {
     expression = expression + $('#result').text();
     var _result = eval(expression);
-    console.log(_result);
+    $('#result').text(_result);
 }
 function add(_value) {
     console.log(_value);
@@ -39,8 +39,7 @@ function add(_value) {
         calculate_multi: '*',
         calculate_div: '/'
     };
-    expression = expression + $('#result').text();
-    expression = expression + _calculateObj[_value];
+    expression = expression || $('#result').text() + _calculateObj[_value];
 }
 
 /**
