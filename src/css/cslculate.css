@@ -9,36 +9,14 @@
   text-align: center;
   background-color: #E4E4E4;
 }
-.main .inputBox {
-  height: 4rem;
+.main .result {
   text-align: right;
-  line-height: 5rem;
-  background: #fff;
-  font-size: 2.5rem;
 }
 .main .keyBoard {
-  height: 24rem;
-  color: white;
-}
-.main .keyBoard table,
-.main .keyBoard tbody {
-  border-spacing: 0;
-  width: 100%;
-}
-.main .keyBoard tr {
-  border-spacing: 0;
-  width: 100%;
-  display: block;
-  height: 4rem;
-  line-height: 4rem;
-}
-.main .keyBoard td {
   text-align: center;
-  margin-left: 2%;
-  background-color: #446089;
+}
+.main .keyBoard span {
+  float: left;
+  width: 25%;
   box-sizing: border-box;
-  display: inline-block;
-  width: 22.5%;
-  height: 3rem;
-  line-height: 3rem;
 }

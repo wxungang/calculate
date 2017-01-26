@@ -12,24 +12,14 @@
 <body>
 <div class="main">
     <div class="header">在 线 简 易 计 算 器</div>
-    <div class="inputBox" id="result">0</div>
-    <div class="keyBoard">
-        <table>
-            <tbody>
-            <tr><td class="save">存储</td><td class="withDrawal">取存</td><td class="del">退格</td><td class="clear">清屏</td></tr>
-            <tr><td>累存</td><td>积存</td><td>清存</td><td>÷</td></tr>
-            <tr><td>7</td><td>8</td><td>9</td><td>×</td></tr>
-            <tr><td>4</td><td>5</td><td>6</td><td>－</td></tr>
-            <tr><td>1</td><td>2</td><td>3</td><td id="add">＋</td></tr>
-            <tr><td>0</td><td>.</td><td>+/-</td><td id="calculate">＝</td></tr>
-            </tbody>
-        </table>
+    <div class="result" id="result">0</div>
+    <div class="keyBoard" id="keyBoard">
+        <span id="clear">AC</span><span id="back">back</span><span>=</span><span>none</span>
+        <span class="key_7">7</span><span>8</span><span>9</span><span>+</span>
+        <span>4</span><span>5</span><span>6</span><span>-</span>
+        <span>1</span><span>2</span><span>3</span><span>×</span>
+        <span class="percent">%</span><span>0</span><span class="dot">.</span><span>÷</span>
     </div>
-</div>
-<div class="peel">
-    <div class="peel1"></div>
-    <div class="peel2"></div>
-    <div class="peel3"></div>
 </div>
 </body>
 <script type="text/javascript" src="../common/jquery-3.1.1.js"></script>
