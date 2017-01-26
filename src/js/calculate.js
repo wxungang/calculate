@@ -6,7 +6,6 @@ $(function () {
     back();
 
     taps();
-
 });
 
 function taps() {
