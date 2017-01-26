@@ -7,7 +7,7 @@ $(function () {
 
     taps();
 });
-var expression = '';
+var exp = '';
 var calculateFlag = false;
 function taps() {
     $('#keyBoard').on('click', 'span', function (e) {
@@ -27,8 +27,8 @@ function inputValue() {
     console.log('inputValue');
 }
 function result() {
-    expression = expression + $('#result').text();
-    var _result = eval(expression);
+    exp = exp + $('#result').text();
+    var _result = eval(exp);
     $('#result').text(_result);
 }
 function add(_value) {
@@ -39,7 +39,7 @@ function add(_value) {
         calculate_multi: '*',
         calculate_div: '/'
     };
-    expression = expression || $('#result').text() + _calculateObj[_value];
+    exp = (exp || $('#result').text()) + _calculateObj[_value];
 }
 
 /**
