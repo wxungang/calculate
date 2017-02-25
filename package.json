@@ -9,10 +9,14 @@
   "scripts": {
     "gulp": "gulp"
   },
-  "dependencies:": {
-
-  },
+  "dependencies:": {},
   "devDependencies": {
-    "gulp":"^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-concat":"^2.6.1",
+    "gulp-html-replace":"^1.6.2",
+    "gulp-clean":"*",
+    "gulp-clean-css":"^3.0.3",
+    "gulp-batch-replace":"*"
   }
 }
